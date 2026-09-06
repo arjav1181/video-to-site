@@ -1,3 +1,9 @@
+> **Moved into [SiteForge](https://github.com/arjav1181/siteforge) — this repo is archived.**
+>
+> `video-to-site` lives on as `siteforge video`, alongside sections, FX, 3D
+> scenes, a demo recorder, site audit, and more. Install the toolkit:
+> `npm i -g @arjav1181/siteforge`
+
 # video-to-site
 
 [![CI](https://github.com/arjav1181/video-to-site/actions/workflows/ci/badge.svg)](https://github.com/arjav1181/video-to-site/actions/workflows/ci)
