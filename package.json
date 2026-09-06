@@ -1,0 +1,37 @@
+{
+  "name": "video-to-site",
+  "version": "1.0.0",
+  "description": "Turn any video into a scroll-driven Next.js portfolio site. Upscale, extract frames, scaffold — done.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Arjav",
+  "homepage": "https://github.com/arjav1181/video-to-site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjav1181/video-to-site.git"
+  },
+  "keywords": ["video", "frames", "nextjs", "portfolio", "scroll-animation", "ffmpeg", "cli"],
+  "bin": {
+    "video-to-site": "./dist/cli.js"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.20.5",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}
