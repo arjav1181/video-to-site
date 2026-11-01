@@ -2,13 +2,20 @@
 >
 > `video-to-site` lives on as `siteforge video`, alongside sections, FX, 3D
 > scenes, a demo recorder, site audit, and more. Install the toolkit:
-> `npm i -g @arjav1181/siteforge`
+>
+> ```bash
+> npm i -g @aj1181/site-forge
+> ```
+>
+> Then run `siteforge video intro.mp4 my-site`. The old standalone `video-to-site`
+> package was never published to npm, so there is nothing to install from here —
+> use SiteForge instead.
 
 # video-to-site
 
-[![CI](https://github.com/arjav1181/video-to-site/actions/workflows/ci/badge.svg)](https://github.com/arjav1181/video-to-site/actions/workflows/ci)
-[![npm version](https://img.shields.io/npm/v/video-to-site.svg)](https://www.npmjs.com/package/video-to-site)
+[![CI](https://github.com/arjav1181/video-to-site/actions/workflows/ci.yml/badge.svg)](https://github.com/arjav1181/video-to-site/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Archived](https://img.shields.io/badge/status-archived-lightgrey)](https://github.com/arjav1181/siteforge)
 
 Turn **any video** into a **scroll-driven Next.js portfolio site** — the video
 plays frame-by-frame as you scroll. One command does everything: analyze,
@@ -16,12 +23,32 @@ upscale, extract frames, optimize, scaffold, install, build.
 
 <video src="assets/demo.mp4" width="100%" autoplay muted loop playsinline></video>
 
+## Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [What you get](#what-you-get)
+- [Why it looks clean](#why-it-looks-clean)
+- [For AI agents](#for-ai-agents)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Install
 
+Install the toolkit that contains this command:
+
 ```bash
-npm i -g video-to-site
-# or
-curl -fsSL https://raw.githubusercontent.com/arjav1181/video-to-site/main/install.sh | bash
+npm i -g @aj1181/site-forge
+siteforge video intro.mp4 my-site
+```
+
+To run this repository's own CLI from source instead:
+
+```bash
+git clone https://github.com/arjav1181/video-to-site.git
+cd video-to-site
+npm install && npm run build
+node dist/cli.js intro.mp4
 ```
 
 Requirements: **Node.js 18+**, **ffmpeg + ffprobe**, and **bun or npm**.
